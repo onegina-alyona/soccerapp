@@ -10,6 +10,7 @@ const routes = app => {
     app.route('/players')
         .get(getPlayers)
         .post(addNewPlayer);
+        
     app.route('/player/:PlayerId')
         .get(getPlayers)
         .put(UpdatePlayer)
